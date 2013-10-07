@@ -9,6 +9,7 @@ module Locomotive
 
         def display(name)
             ' #{params} '
+            ' #{name} '
             page = Page.all.where(title: name).first
             ' #{ page.created_at } '
 
