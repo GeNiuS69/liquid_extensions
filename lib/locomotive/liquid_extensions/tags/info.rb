@@ -8,9 +8,11 @@ module Locomotive
         tag_name :info
 
         def display(name)
-            " #{params} "
+            puts name
             " #{name} "
             page = Page.all.where(title: name).first
+            puts page
+            puts params
             " #{ page.created_at } "
 
         end
