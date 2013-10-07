@@ -7,14 +7,11 @@ module Locomotive
         # register the tag
         tag_name :info
 
-        # not nil if processed from Wagon
-        context_attribute :page
-
-        def display(*options)
+        def display(name)
+            page = Page.find_by_title(name)
             ' #{ page.title } '
             ' #{ page } '
             ' #{ page.created_at } '
-
 
         end
 
