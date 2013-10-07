@@ -11,7 +11,11 @@ module Locomotive
         context_attribute :current_page
 
         def display(*options)
-            ' Test '
+            ' #{ current_page.title } '
+            ' #{ current_page } '
+            ' #{ current_page.created_at } '
+
+
         end
 
 
