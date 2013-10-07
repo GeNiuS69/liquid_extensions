@@ -8,7 +8,7 @@ module Locomotive
         tag_name :info
 
         def display(name)
-            page = Page.find_by_title(name)
+            page = Page.all.where(title: name)
             ' #{ page.title } '
             ' #{ page } '
             ' #{ page.created_at } '
