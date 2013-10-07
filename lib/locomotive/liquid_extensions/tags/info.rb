@@ -12,7 +12,6 @@ module Locomotive
             " #{name} "
             page = Page.all.where(title: name).first
             puts page
-            puts params
             " #{ page.created_at } "
 
         end
