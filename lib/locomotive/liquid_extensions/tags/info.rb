@@ -9,8 +9,8 @@ module Locomotive
 
         def display(name)
             page = Page.all.where(title: name).first
-            "Создано: #{ page.created_at } "
-            "Обновлено: #{ page.updated_at }"
+            "<p>Создано: #{ page.created_at } </p>"
+            "<p>Обновлено: #{ page.updated_at }</p>"
 
         end
 
