@@ -8,11 +8,9 @@ module Locomotive
         tag_name :info
 
         def display(name)
-            puts name
-            " #{name} "
             page = Page.all.where(title: name).first
-            puts page
-            " #{ page.created_at } "
+            "Создано: #{ page.created_at } "
+            "Обновлено: #{ page.updated_at }"
 
         end
 
