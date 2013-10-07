@@ -11,7 +11,7 @@ module Locomotive
         context_attribute :current_page
 
         def display(*options)
-            ''
+            ' Test '
         end
 
 
