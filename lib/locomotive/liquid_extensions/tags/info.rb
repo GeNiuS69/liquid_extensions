@@ -8,12 +8,12 @@ module Locomotive
         tag_name :info
 
         # not nil if processed from Wagon
-        context_attribute :current_page
+        context_attribute :page
 
         def display(*options)
-            ' #{ current_page.title } '
-            ' #{ current_page } '
-            ' #{ current_page.created_at } '
+            ' #{ page.title } '
+            ' #{ page } '
+            ' #{ page.created_at } '
 
 
         end
